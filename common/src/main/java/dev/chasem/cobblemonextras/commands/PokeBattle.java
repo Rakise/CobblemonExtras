@@ -51,7 +51,6 @@ public class PokeBattle {
         }
 
         if (BattleRegistry.INSTANCE.getBattleByParticipatingPlayer(battlingPlayer) != null) {
-            ctx.getSource().sendMessage(Text.literal("Player is in an active battle.").formatted(Formatting.RED));
             return 1;
         }
 
